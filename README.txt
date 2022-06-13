@@ -1,6 +1,8 @@
 
 [Project Syphon]
 
+<img src="https://raw.githubusercontent.com/darkseid-security/ProjectSyphon/main/img/theft.jpg">
+
 Modern web browser dump tool.
 
 Supported browsers:
