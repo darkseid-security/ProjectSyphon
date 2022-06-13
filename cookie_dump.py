@@ -3,7 +3,7 @@ from Cryptodome.Cipher import AES
 import json
 import base64
 import win32crypt
-import os
+import os,sys
 import codecs
 import subprocess
 import csv
