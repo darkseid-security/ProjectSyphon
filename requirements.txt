@@ -1,0 +1,4 @@
+paramiko
+pycryptodomex
+pywin32
+
