@@ -7,6 +7,14 @@ Extract browser infomation
 
 Modern web browser dump tool.
 
+Scripts:
+- cookie_dump.py = dumps cookie data
+- credit_dump.py = dumps credit card data
+- password_dump = dumps password data
+- sneakyfox.py = copies firefox password and web data files works on both windows and linux
+- exfiltration.py = exfiltrates data over FTP/SSH works on both windows and linux
+- personal_info.py = dumps personal info
+
 Supported browsers:
 - Google Chrome version 80+
 - Opera
