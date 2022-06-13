@@ -1,4 +1,4 @@
-# ProjectSyphon
+# Project SyphonV1.1
 Extract browser infomation
 
 <img src="https://raw.githubusercontent.com/darkseid-security/ProjectSyphon/main/img/theft.jpg">
