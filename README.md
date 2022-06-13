@@ -5,7 +5,7 @@ Extract browser infomation
 
 [Project Syphon]
 
-Modern web browser dump tool.
+Modern web browser dumping tool.
 
 Scripts:
 - cookie_dump.py = dumps cookie data
