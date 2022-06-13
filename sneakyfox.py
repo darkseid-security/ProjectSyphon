@@ -25,7 +25,7 @@ if os.name == 'nt':
     windows_path = os.path.normpath(r"%s\AppData\Roaming\Mozilla\Firefox\Profiles"%(os.environ['USERPROFILE']))
     windows_exist = Path(windows_path) #check to see if firefox exists on a windows system
     if windows_exist.is_dir(): #checks to see if firefox path exists on windows
-        files = os.listdir(linux_path) #add folders to list
+        files = os.listdir(windows_path) #add folders to list
         for i in files:
             if len(i) > 20:
                 store = i #add folders to list if length is > than 20
