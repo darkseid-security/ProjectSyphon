@@ -39,3 +39,4 @@ TODO:
 - Build support for modern linux browsers
 - Build support for chrome versions <80
 - Close CMD on windows after script has run
+- Fix issue with personal_info writing to csv order
