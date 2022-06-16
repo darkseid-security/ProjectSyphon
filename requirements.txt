@@ -1,4 +1,4 @@
 paramiko
 pycryptodomex
 pywin32
-
+pyinstaller
