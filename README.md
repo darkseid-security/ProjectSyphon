@@ -41,3 +41,6 @@ TODO:
 - Close CMD on windows after script has run
 - Fix issue with personal_info writing to csv order
 - Bypass AV
+
+Demo:
+https://www.youtube.com/watch?v=9cbxARZa9lw
