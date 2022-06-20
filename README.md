@@ -34,13 +34,13 @@ Features:
 - Dump personal infomation such as address,name,company,city,state,zipcode,email address and phone number
 - Copy all firefox stored info
 - Exfiltrate files over encrypted FTP or SSH connections(will only upload files that exist)
+- Bypasses AV(compile with --noupx option to avoid AV detection)
 
 TODO:
 - Build support for modern linux browsers
 - Build support for chrome versions <80
 - Close CMD on windows after script has run
 - Fix issue with personal_info writing to csv order
-- Bypass AV
 
 Demo:
 https://www.youtube.com/watch?v=9cbxARZa9lw
