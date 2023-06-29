@@ -49,6 +49,8 @@ Features:
 - [*New Feature] Added support for Linux browsers
 - [*New Feature] Extracts keyring encryption keys if used(Linux only)
 
+* Uninstall Pycrypto if installed on Linux issue when decoding bytes
+
 TODO:
 - Close CMD on windows after script has run
 - Fix issue with personal_info writing to csv order
