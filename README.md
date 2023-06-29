@@ -49,7 +49,7 @@ Features:
 - [*New Feature] Added support for Linux browsers
 - [*New Feature] Extracts keyring encryption keys if used(Linux only)
 
-* Uninstall Pycrypto if installed on Linux issue when decoding bytes
+* Uninstall Pycrypto(No longer maintained) if installed on Linux issue when decoding bytes
 
 TODO:
 - Close CMD on windows after script has run
