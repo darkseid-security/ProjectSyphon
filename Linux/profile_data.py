@@ -22,8 +22,8 @@ BRAVE_HISTORY = '/home/' + os.getlogin() + f'/.config/BraveSoftware/Brave-Browse
 CHROME_HISTORY = '/home/' + os.getlogin() + f'/.config/google-chrome/Default/{history_file}'
 
 # CSV file to output results to
-data = open('profile.csv',mode='a',newline='',encoding='utf-8')
-csv_writer = csv.writer(data, delimiter=',')
+profile = open('profile.csv',mode='a',newline='',encoding='utf-8')
+csv_writer = csv.writer(profile, delimiter=',')
 csv_writer.writerow(["First Name","Middle Name","Last Name","Full Name","Name","Keyword","URL","Email","Download Path","File Type","Title","Visted","Typed","Phone Number","Company Name","Street Address","City","State","Zipcode","Country Code"])
 files = ['profile.csv']
 
@@ -127,6 +127,7 @@ def get_urls(browser,browser_name):
 
         for url,title,visit_count,typed_count in data:
             csv_writer.writerow(["","","","","","",url,"","","","",title,str(visit_count),str(typed_count)])
+        profile.close()
         print("[All URLs Dumped] written data to profile.csv\n")
         print("[All Personal Info Dumped] written data to profile.csv\n")
     except sqlite3.OperationalError:
